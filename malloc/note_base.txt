@@ -1,0 +1,69 @@
+1. check_base()
+       ↓
+   Is the base valid?
+
+2. base_len()
+       ↓
+   How many symbols are in the base?
+
+3. find_digit()
+       ↓
+   What number does this character represent?
+
+4. atoi_base()
+       ↓
+   nbr + base_from → int
+
+5. count_digits()
+       ↓
+   How much malloc do we need?
+
+6. putnbr_base()
+       ↓
+   int → string in base_to
+
+7. ft_convert_base()
+       ↓
+   Connect everything
+   -------------
+                 "1010"
+                 |
+                 | base_from = "01"
+                 ↓
+           ┌─────────────┐
+           │  atoi_base  │
+           └─────────────┘
+                 |
+                 ↓
+                10
+                 |
+                 | base_to = "0123456789ABCDEF"
+                 ↓
+         ┌────────────────┐
+         │  putnbr_base   │
+         └────────────────┘
+                 |
+                 ↓
+               "A"
+               --------------------------
+
+
+/*
+nbr
+ ↓
+base_from
+ ↓
+integer
+ ↓
+base_to
+ ↓
+result string
+*/
+
+/*
+nbr       = "1010"
+base_from = "01"
+base_to   = "0123456789"
+
+the result is : "10" ; 
+*/
